@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133CD7601B256717003AA584 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133CD75E1B256717003AA584 /* Fabric.framework */; };
+		133CD7611B256717003AA584 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133CD75F1B256717003AA584 /* Crashlytics.framework */; };
 		5A4D69091ADC12A400FF9F9E /* scanfindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D69081ADC12A400FF9F9E /* scanfindTests.m */; };
 		5A4D69231ADD731000FF9F9E /* CPTLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D691E1ADD731000FF9F9E /* CPTLocationViewController.m */; };
 		5A4D69241ADD731000FF9F9E /* CPTScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D69201ADD731000FF9F9E /* CPTScanQRViewController.m */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133CD75E1B256717003AA584 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		133CD75F1B256717003AA584 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		5A4D68E91ADC12A300FF9F9E /* scanfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scanfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4D69021ADC12A400FF9F9E /* scanfindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scanfindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4D69071ADC12A400FF9F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133CD7611B256717003AA584 /* Crashlytics.framework in Frameworks */,
+				133CD7601B256717003AA584 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,8 @@
 		5A4D68E01ADC12A300FF9F9E = {
 			isa = PBXGroup;
 			children = (
+				133CD75E1B256717003AA584 /* Fabric.framework */,
+				133CD75F1B256717003AA584 /* Crashlytics.framework */,
 				5A4D68EB1ADC12A300FF9F9E /* scanfind */,
 				5A4D69051ADC12A400FF9F9E /* scanfindTests */,
 				5A4D68EA1ADC12A300FF9F9E /* Products */,
@@ -144,6 +152,7 @@
 				5A4D68E51ADC12A300FF9F9E /* Sources */,
 				5A4D68E61ADC12A300FF9F9E /* Frameworks */,
 				5A4D68E71ADC12A300FF9F9E /* Resources */,
+				133CD75D1B2566EF003AA584 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -229,6 +238,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		133CD75D1B2566EF003AA584 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 0b67287021d8d49d531be30a002df3a878b2b740 33b490234be39f721fd4369937e57c6c3f76044f047798e8589e206bf687c242";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A4D68E51ADC12A300FF9F9E /* Sources */ = {
@@ -362,6 +387,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -375,6 +404,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
