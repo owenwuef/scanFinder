@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQo-ji-64G">
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQo-ji-64G">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="6qO-OB-nYC"/>
                                 </connections>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-HB-aTb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-HB-aTb">
                                 <rect key="frame" x="120" y="234" width="80" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2Ik-gM-TLj"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="s1s">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,7 +36,7 @@
                                     <action selector="btnOneTouchInsideUP:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V89-PL-uVo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsw-XB-Tbg">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsw-XB-Tbg">
                                 <rect key="frame" x="120" y="315" width="80" height="79"/>
                                 <state key="normal" title="Button" image="dw">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,7 +45,7 @@
                                     <action selector="btnOneTouchInsideUP:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7bT-PL-J4Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ege-Eq-QKX">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ege-Eq-QKX">
                                 <rect key="frame" x="120" y="402" width="80" height="79"/>
                                 <state key="normal" title="Button" image="收藏">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +54,7 @@
                                     <action selector="btnOneTouchInsideUP:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a6E-YQ-Zt3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pC-Dt-YJp">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pC-Dt-YJp">
                                 <rect key="frame" x="120" y="489" width="80" height="79"/>
                                 <state key="normal" title="Button" image="SS">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,6 +65,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z85-HB-aTb" firstAttribute="top" secondItem="LQo-ji-64G" secondAttribute="bottom" constant="3" id="0dS-iY-RCb"/>
+                            <constraint firstItem="lsw-XB-Tbg" firstAttribute="centerX" secondItem="LQo-ji-64G" secondAttribute="centerX" id="3Qt-2Y-TcN"/>
+                            <constraint firstItem="Ege-Eq-QKX" firstAttribute="leading" secondItem="lsw-XB-Tbg" secondAttribute="leading" id="6Je-ue-C2n"/>
+                            <constraint firstItem="2pC-Dt-YJp" firstAttribute="top" secondItem="Ege-Eq-QKX" secondAttribute="bottom" constant="8" symbolic="YES" id="9nq-t2-ZFh"/>
+                            <constraint firstItem="Z85-HB-aTb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="234" id="Ab1-4Y-vYW"/>
+                            <constraint firstItem="2pC-Dt-YJp" firstAttribute="centerX" secondItem="LQo-ji-64G" secondAttribute="centerX" id="CV6-yq-A0U"/>
+                            <constraint firstItem="Ege-Eq-QKX" firstAttribute="centerX" secondItem="LQo-ji-64G" secondAttribute="centerX" id="H8v-98-bYj"/>
+                            <constraint firstItem="lsw-XB-Tbg" firstAttribute="leading" secondItem="Z85-HB-aTb" secondAttribute="leading" id="M3z-mb-Eer"/>
+                            <constraint firstItem="2pC-Dt-YJp" firstAttribute="leading" secondItem="Ege-Eq-QKX" secondAttribute="leading" id="Tgb-UU-RZb"/>
+                            <constraint firstItem="Ege-Eq-QKX" firstAttribute="top" secondItem="lsw-XB-Tbg" secondAttribute="bottom" constant="8" symbolic="YES" id="XlA-nu-XZm"/>
+                            <constraint firstItem="lsw-XB-Tbg" firstAttribute="top" secondItem="Z85-HB-aTb" secondAttribute="bottom" constant="2" id="b4r-x0-LJa"/>
+                            <constraint firstItem="Z85-HB-aTb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dyA-aj-Lht"/>
+                            <constraint firstItem="Z85-HB-aTb" firstAttribute="centerX" secondItem="LQo-ji-64G" secondAttribute="centerX" id="mLk-PT-XKL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="logInWebView" destination="LQo-ji-64G" id="cwp-c0-L7c"/>
@@ -78,9 +96,4 @@
         <image name="s1s" width="78" height="79"/>
         <image name="收藏" width="78" height="79"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
