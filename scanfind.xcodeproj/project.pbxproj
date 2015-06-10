@@ -22,6 +22,7 @@
 		5A4D69321ADD73DB00FF9F9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D692F1ADD73DB00FF9F9E /* Images.xcassets */; };
 		5A4D69331ADD73DB00FF9F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D69301ADD73DB00FF9F9E /* Main.storyboard */; };
 		5A4D69361ADD73EB00FF9F9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D69341ADD73EB00FF9F9E /* LaunchScreen.xib */; };
+		C5E104CAA3BA6176B108EEB8 /* libPods-scanfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 657E1BFE49988A03554002AD /* libPods-scanfind.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		133CD7811B280B90003AA584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133CD7821B280B90003AA584 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		133CD7831B280B90003AA584 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		3789560A746A23E6F6181CB0 /* Pods-scanfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scanfind/Pods-scanfind.debug.xcconfig"; sourceTree = "<group>"; };
 		5A4D68E91ADC12A300FF9F9E /* scanfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scanfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4D69021ADC12A400FF9F9E /* scanfindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scanfindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4D69071ADC12A400FF9F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +84,8 @@
 		5A4D69301ADD73DB00FF9F9E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
 		5A4D69351ADD73EB00FF9F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		5A4D69391ADD742700FF9F9E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		657E1BFE49988A03554002AD /* libPods-scanfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scanfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB718698FD97954FF2E231D7 /* Pods-scanfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanfind.release.xcconfig"; path = "Pods/Target Support Files/Pods-scanfind/Pods-scanfind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			files = (
 				133CD7611B256717003AA584 /* Crashlytics.framework in Frameworks */,
 				133CD7601B256717003AA584 /* Fabric.framework in Frameworks */,
+				C5E104CAA3BA6176B108EEB8 /* libPods-scanfind.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +117,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6BEDE3D909AA7AE579A9F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3789560A746A23E6F6181CB0 /* Pods-scanfind.debug.xcconfig */,
+				DB718698FD97954FF2E231D7 /* Pods-scanfind.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		133CD7671B280A52003AA584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				133CD75E1B256717003AA584 /* Fabric.framework */,
+				133CD75F1B256717003AA584 /* Crashlytics.framework */,
 				133CD7681B280A52003AA584 /* NotificationCenter.framework */,
+				657E1BFE49988A03554002AD /* libPods-scanfind.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,13 +158,12 @@
 		5A4D68E01ADC12A300FF9F9E = {
 			isa = PBXGroup;
 			children = (
-				133CD75E1B256717003AA584 /* Fabric.framework */,
-				133CD75F1B256717003AA584 /* Crashlytics.framework */,
 				5A4D68EB1ADC12A300FF9F9E /* scanfind */,
 				5A4D69051ADC12A400FF9F9E /* scanfindTests */,
 				133CD77F1B280B90003AA584 /* scanFindToday */,
 				133CD7671B280A52003AA584 /* Frameworks */,
 				5A4D68EA1ADC12A300FF9F9E /* Products */,
+				0E6BEDE3D909AA7AE579A9F0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,11 +248,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A4D690C1ADC12A400FF9F9E /* Build configuration list for PBXNativeTarget "scanfind" */;
 			buildPhases = (
+				46D8C83730A5CAB4024EF40E /* Check Pods Manifest.lock */,
 				5A4D68E51ADC12A300FF9F9E /* Sources */,
 				5A4D68E61ADC12A300FF9F9E /* Frameworks */,
 				5A4D68E71ADC12A300FF9F9E /* Resources */,
 				133CD75D1B2566EF003AA584 /* ShellScript */,
 				133CD7781B280A52003AA584 /* Embed App Extensions */,
+				35048F9AA77DB14A90F85F3D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,6 +367,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 0b67287021d8d49d531be30a002df3a878b2b740 33b490234be39f721fd4369937e57c6c3f76044f047798e8589e206bf687c242";
+		};
+		35048F9AA77DB14A90F85F3D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scanfind/Pods-scanfind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D8C83730A5CAB4024EF40E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -519,6 +567,7 @@
 		};
 		5A4D690D1ADC12A400FF9F9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3789560A746A23E6F6181CB0 /* Pods-scanfind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -536,6 +585,7 @@
 		};
 		5A4D690E1ADC12A400FF9F9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB718698FD97954FF2E231D7 /* Pods-scanfind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -595,6 +645,7 @@
 				133CD78C1B280B90003AA584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A4D68E41ADC12A300FF9F9E /* Build configuration list for PBXProject "scanfind" */ = {
 			isa = XCConfigurationList;
