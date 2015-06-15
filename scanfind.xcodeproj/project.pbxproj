@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133CD7601B256717003AA584 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133CD75E1B256717003AA584 /* Fabric.framework */; };
-		133CD7611B256717003AA584 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133CD75F1B256717003AA584 /* Crashlytics.framework */; };
 		133CD77E1B280B90003AA584 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133CD7681B280A52003AA584 /* NotificationCenter.framework */; };
 		133CD7841B280B90003AA584 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133CD7831B280B90003AA584 /* TodayViewController.m */; };
 		133CD7891B280B90003AA584 /* scanFindToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 133CD77D1B280B90003AA584 /* scanFindToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -57,8 +55,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		133CD75E1B256717003AA584 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		133CD75F1B256717003AA584 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		133CD7681B280A52003AA584 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		133CD77D1B280B90003AA584 /* scanFindToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = scanFindToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		133CD7811B280B90003AA584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133CD7611B256717003AA584 /* Crashlytics.framework in Frameworks */,
-				133CD7601B256717003AA584 /* Fabric.framework in Frameworks */,
 				C5E104CAA3BA6176B108EEB8 /* libPods-scanfind.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,8 +123,6 @@
 		133CD7671B280A52003AA584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				133CD75E1B256717003AA584 /* Fabric.framework */,
-				133CD75F1B256717003AA584 /* Crashlytics.framework */,
 				133CD7681B280A52003AA584 /* NotificationCenter.framework */,
 				657E1BFE49988A03554002AD /* libPods-scanfind.a */,
 			);
