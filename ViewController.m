@@ -90,7 +90,7 @@
     [super viewDidAppear:animated];
     
     
-    [_logInWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60]];
+    [_logInWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"www.baidu.com"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60]];
     
 }
 
