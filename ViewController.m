@@ -16,6 +16,8 @@
 
 //#import "CPTASRViewController.h"
 
+#import "LNPopupController/LNPopupController.h"
+
 @interface ViewController (){
     CPTTabViewController *theTabViewController;
     
@@ -90,7 +92,7 @@
     [super viewDidAppear:animated];
     
     
-    [_logInWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"www.baidu.com"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60]];
+    [_logInWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.glaucusis.com:5000/publications?to=1440505200000&from=1440504000000&instrument=2769"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60]];
     
 }
 
@@ -125,8 +127,8 @@
             //            }];
             break;
         case 3:
-            //            [self presentViewController:asrViewController animated:YES completion:^(){
-            //            }];
+            [self presentPopupBarWithContentViewController:locationsViewController animated:YES completion:^(){
+            }];
             break;
             
         default:
